@@ -1,3 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#141414] text-[#f4f4f4]
+  }
+  main {        
+    width:100%;    
+    background:#090909;
+    padding:10% 0 0;    
+    z-index:-1;
+   
+  }
+  main {
+    @apply md:mt-24 mt-20 sm:mt-24 transition-all duration-[.5s] bg-gradient-to-b from-gray-900/10
+    to-[#010511]
+  }
+  main {
+    margin-top:10px;
+  }
+}
+
+@layer components {
+  header{
+    @apply text-sm bg-[#010101] fixed top-0 w-full h-20 md:h-28 lg:h-36 transition-all duration-[1s] 
+      hover:bg-[#0e0e0e];
+  }
+  header {
+    z-index:3;
+  }
+  .menuButton{
+    @apply text-[white] cursor-pointer visible sm:hidden float-right transition-all duration-[.5s] 
+    hover:text-[#a3a3a3]
+  }
+  .menuButton{
+    margin-top:-20px;
+    position:relative;
+    top:-20px;
+    right:20px;
+  }
+  .logo{
+    margin:20px 10px  0;
+    z-index:2;    
+    position:relative;
+  }
+  #nav {
+    width:80%;
+    text-align:center;
+    margin:0 auto;
+    position:relative;
+    top:-30px;
+  }
+  #nav li{
+    @apply py-10 p-2 w-full hidden sm:inline md:inline transition-all duration-[.5s] 
+  }
+  #nav li a{
+    @apply opacity-80 transition duration-[.5s] px-4 py-2 rounded bg-[black] md:text-base lg:text-lg 
+    hover:bg-[#181818]
+  }
+  .logo {
+    @apply opacity-90 transition-all duration-[.5s] h-10 md:h-20 lg:w-36
+    hover:opacity-100
+  }
+  .client{
+    padding:20px;
+    overflow:hidden;
+    height:300px;
+    margin-top:0px;
+    opacity:.6;
+  }
+  .rightSide{
+    position:relative;
+    left:0;
+    padding:30px;
+  }
+  .leftSide{
+    position:relative;
+    right:0;
+  }
+  #mainWrapper{
+    overflow:hidden;
+  }
+  footer{
+    background:#090909;
+    height:140px;
+    color:#ccc;
+    padding:30px;
+  }
+}
